@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionservice:Operation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" xmlns:ilog.rules.studio.model.query.extractor="http://ilog.rules.studio/model/query/extractor.ecore" rulesetName="pricing" usingRuleflow="true" ruleflowName="pricing flow" targetRuleProjectName="pq-pricing-rules">
+  <name>pricing</name>
+  <uuid>ca76ad9e-74fe-4f3f-81e5-28cd86f4a3b7</uuid>
+  <referencedVariables variableName="loanRequest" variableSetName="prequal variables" direction="IN_OUT">
+    <variableSet href="../../prequal-bom/rules/prequal%20variables.var#59b6f071-bdd8-47c8-a4ed-e261fa9678b6"/>
+  </referencedVariables>
+  <ruleflow href="../rules/pricing%20flow.rfl#64973ac6-5060-4cfa-ad4a-d2aefbf380e5"/>
+  <extractor xsi:type="ilog.rules.studio.model.query.extractor:QueryExtractor" name="pricing_extractor" validator="Default Validator"/>
+  <targetRuleProject href="../../pq-pricing-rules#7fb985f3-d1de-45f3-9fb5-990a27f59da6"/>
+</com.ibm.rules.studio.model.decisionservice:Operation>

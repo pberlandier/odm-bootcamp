@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>min loan amount</name>
+  <uuid>65a8512a-b874-4f7c-9de9-d79e296c0e6f</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[if
+	the amount of 'loan request' is less than 50000
+then
+	decline 'loan request' because "the loan amount is too low" ;
+ ]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

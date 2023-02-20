@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>LTV for non-US citizen</name>
+  <uuid>c9ed8585-9465-4403-82f4-b514b7ebf4f1</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[if
+	the citizenship status of borrower is "non-US citizen" and
+	the LTV of 'loan request' is more than 85
+then
+	decline 'loan request' because "the LTV is too high for non-citizen" ;]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

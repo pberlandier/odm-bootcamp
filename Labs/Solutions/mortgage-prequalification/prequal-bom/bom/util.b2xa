@@ -1,0 +1,24 @@
+<b2x:translation xmlns:b2x="http://schemas.ilog.com/JRules/1.3/Translation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schemas.ilog.com/JRules/1.3/Translation ilog/rules/schemas/1_3/b2x.xsd">
+    <id>7b155211-8a1b-4ae8-99ac-3123efa114e4</id>
+    <lang>ARL</lang>
+    <class>
+        <businessName>acme.Util</businessName>
+        <executionName>java.lang.Object</executionName>
+        <method>
+            <name>maximum</name>
+            <parameter type="double"/>
+            <parameter type="double"/>
+            <body language="arl"><![CDATA[
+            return java.lang.Math.max(val1, val2);
+            ]]></body>
+        </method>
+        <method>
+            <name>minimum</name>
+            <parameter type="double"/>
+            <parameter type="double"/>
+            <body language="arl"><![CDATA[
+            return java.lang.Math.min(val1, val2);
+            ]]></body>
+        </method>
+    </class>
+</b2x:translation>

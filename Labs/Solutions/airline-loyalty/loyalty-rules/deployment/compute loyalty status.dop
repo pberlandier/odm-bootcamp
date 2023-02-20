@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionservice:Operation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" xmlns:ilog.rules.studio.model.query.extractor="http://ilog.rules.studio/model/query/extractor.ecore" rulesetName="compute_loyalty_status" usingRuleflow="true" ruleflowName="customer status" targetRuleProjectName="loyalty-rules">
+  <name>compute loyalty status</name>
+  <uuid>72c3832a-e8a3-4509-9206-9a6e41910b53</uuid>
+  <referencedVariables variableName="status" variableSetName="variables" direction="OUT">
+    <variableSet href="../rules/variables.var#162efbd6-4068-469f-8529-c9b1e3f10b75"/>
+  </referencedVariables>
+  <referencedVariables variableName="customer" variableSetName="variables">
+    <variableSet href="../rules/variables.var#162efbd6-4068-469f-8529-c9b1e3f10b75"/>
+  </referencedVariables>
+  <ruleflow href="../rules/customer%20status.rfl#b5e8b818-5a65-41af-a866-e1cbfac5f012"/>
+  <extractor xsi:type="ilog.rules.studio.model.query.extractor:QueryExtractor" name="compute loyalty status_extractor" validator="Default Validator"/>
+  <targetRuleProject href="../../loyalty-rules#73e25380-428d-4c5a-b2e8-a3ba478e8fbd"/>
+</com.ibm.rules.studio.model.decisionservice:Operation>

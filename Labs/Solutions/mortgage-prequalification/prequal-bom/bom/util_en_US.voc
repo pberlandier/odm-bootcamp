@@ -1,0 +1,7 @@
+# Vocabulary Properties
+uuid = b3c74d00-0464-4ba4-9b2a-7fb5d9fdebe7
+
+# acme.Util
+acme.Util#concept.label = util
+acme.Util.maximum(double,double)#phrase.navigation = maximum({0}, {1})
+acme.Util.minimum(double,double)#phrase.navigation = minimum({0}, {1})

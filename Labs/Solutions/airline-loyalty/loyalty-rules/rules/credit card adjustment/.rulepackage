@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.base:RulePackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.base="http://ilog.rules.studio/model/base.ecore">
+  <name>credit card adjustment</name>
+  <uuid>574be7ed-6d6d-456d-8b8d-674dcb4606c9</uuid>
+</ilog.rules.studio.model.base:RulePackage>

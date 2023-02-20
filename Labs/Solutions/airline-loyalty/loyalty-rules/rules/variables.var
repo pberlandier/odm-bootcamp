@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.base:VariableSet xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.base="http://ilog.rules.studio/model/base.ecore">
+  <name>variables</name>
+  <uuid>162efbd6-4068-469f-8529-c9b1e3f10b75</uuid>
+  <variables name="customer" type="acme.Customer" initialValue="" verbalization="customer"/>
+  <variables name="status" type="java.lang.String" initialValue="&quot;member&quot;" verbalization="status"/>
+</ilog.rules.studio.model.base:VariableSet>

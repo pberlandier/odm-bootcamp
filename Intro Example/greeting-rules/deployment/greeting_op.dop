@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionservice:Operation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" xmlns:ilog.rules.studio.model.query.extractor="http://ilog.rules.studio/model/query/extractor.ecore" rulesetName="greeting_op" usingRuleflow="true" ruleflowName="flow" targetRuleProjectName="greeting-rules">
+  <name>greeting_op</name>
+  <uuid>4c2b622c-6e9f-4f59-9cba-b98302e5934f</uuid>
+  <referencedVariables variableName="person" variableSetName="vars">
+    <variableSet href="../rules/vars.var#4de9ff48-1b4a-4577-a24b-d63b9228659f"/>
+  </referencedVariables>
+  <referencedVariables variableName="greeting" variableSetName="vars" direction="OUT">
+    <variableSet href="../rules/vars.var#4de9ff48-1b4a-4577-a24b-d63b9228659f"/>
+  </referencedVariables>
+  <ruleflow href="../rules/flow.rfl#a5d2c64b-a389-4eee-b834-7fa55ed3cfa6"/>
+  <extractor xsi:type="ilog.rules.studio.model.query.extractor:QueryExtractor" name="greeting_op_extractor" validator="Default Validator"/>
+  <targetRuleProject href="../../greeting-rules#7cc9c7f6-723c-46b5-8083-6611a2225479"/>
+</com.ibm.rules.studio.model.decisionservice:Operation>

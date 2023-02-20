@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.base:RulePackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.base="http://ilog.rules.studio/model/base.ecore">
+  <name>base rate</name>
+  <uuid>57000a0d-3c91-4802-aae7-e3c812d61650</uuid>
+</ilog.rules.studio.model.base:RulePackage>

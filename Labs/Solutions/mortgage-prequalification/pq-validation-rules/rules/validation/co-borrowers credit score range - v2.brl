@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>co-borrowers credit score range - v2</name>
+  <uuid>0cca163a-d200-40f0-8751-733aef8413bc</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[if
+	there is one borrower in the co-borrowers of 'loan request' where 
+		it is not true that the credit score of this borrower is between 200 and 900 ,
+then
+	decline 'loan request' because "the credit score is out of bounds" ;]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

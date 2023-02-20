@@ -1,0 +1,24 @@
+# Vocabulary Properties
+uuid = 9d53a86c-5645-4088-b854-e79cdca21fb5
+
+# com.acme.Greeting
+com.acme.Greeting#concept.label = greeting
+com.acme.Greeting.message#phrase.action = set the message of {this} to {message}
+com.acme.Greeting.message#phrase.navigation = {message} of {this}
+
+# com.acme.Person
+com.acme.Person#concept.label = person
+com.acme.Person.firstName#phrase.action = set the first name of {this} to {first name}
+com.acme.Person.firstName#phrase.navigation = {first name} of {this}
+com.acme.Person.primaryLanguage#phrase.action = set the primary language of {this} to {primary language}
+com.acme.Person.primaryLanguage#phrase.navigation = {primary language} of {this}
+com.acme.Person.profile#phrase.action = set the profile of {this} to {profile}
+com.acme.Person.profile#phrase.clearer = clear the profile of {this}
+com.acme.Person.profile#phrase.navigation = {profile} of {this}
+
+# com.acme.Profile
+com.acme.Profile#concept.label = profile
+com.acme.Profile.courtesyTitle#phrase.action = set the courtesy title of {this} to {courtesy title}
+com.acme.Profile.courtesyTitle#phrase.navigation = {courtesy title} of {this}
+com.acme.Profile.vip#phrase.action = make it {vip} that {this} is vip
+com.acme.Profile.vip#phrase.navigation = {this} is vip

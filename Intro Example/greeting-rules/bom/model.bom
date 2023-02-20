@@ -1,0 +1,28 @@
+
+property loadGetterSetterAsProperties "true"
+property origin "xom:/greeting-rules//greeting-xom"
+property uuid "f26763e7-407c-4153-af5b-a1af8036bb1d"
+package com.acme;
+
+
+public class Greeting
+{
+    public string message;
+    public Greeting();
+}
+
+public class Person
+{
+    public string firstName;
+    public string primaryLanguage domain {"english", "spanish", "french"};
+    public com.acme.Profile profile;
+    public Person();
+}
+
+public class Profile
+{
+    public string courtesyTitle;
+    public boolean vip;
+    public Profile();
+}
+

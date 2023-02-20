@@ -1,0 +1,44 @@
+
+property loadGetterSetterAsProperties "true"
+property origin "xom:/prequal-bom//prequal-xom"
+property uuid "7d0dd423-6eae-45bd-81da-721fc39e608f"
+package acme;
+
+
+public class Borrower
+{
+    public string citizenshipStatus;
+    public int creditScore;
+    public java.util.Date dateOfBirth;
+    public string employerName;
+    public string employmentType domain {"self-employed", "part-time", "full-time"};
+    public int latePayments;
+    public Borrower();
+    public int getAge();
+}
+
+public class LoanRequest
+{
+    public readonly int LTV;
+    public int amount;
+    public double baseRate;
+    public java.util.List coBorrowers domain 0,* class acme.Borrower;
+    public boolean eligible;
+    public double finalRate;
+    public acme.Borrower primaryBorrower;
+    public acme.Property property;
+    public string purpose;
+    public string riskGrade;
+    public string term;
+    public LoanRequest();
+    public void decline(string message);
+}
+
+public class Property
+{
+    public string occupancyType;
+    public string state;
+    public int value;
+    public Property();
+}
+

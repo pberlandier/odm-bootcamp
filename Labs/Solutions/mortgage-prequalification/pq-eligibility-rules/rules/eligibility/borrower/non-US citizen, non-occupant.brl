@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>non-US citizen, non-occupant</name>
+  <uuid>e51820ca-5577-4b93-abef-b5b5b52f0a3e</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[if
+	the citizenship status of borrower is "non-US citizen" and
+	the occupancy type of the property of 'loan request' is "non-owner occupied"
+then
+	decline 'loan request' because "as a non-US citizen the borrower should occupy the property" ;]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

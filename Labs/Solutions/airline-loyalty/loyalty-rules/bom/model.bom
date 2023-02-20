@@ -1,0 +1,16 @@
+
+property loadGetterSetterAsProperties "true"
+property origin "xom:/loyalty-rules//loyalty-xom"
+property uuid "601cda46-514f-445c-bb2e-7c5381878528"
+package acme;
+
+
+public class Customer
+{
+    public boolean cardMember;
+    public int dollarsSpent;
+    public int milesFlown;
+    public int segmentsTravelled;
+    public Customer();
+}
+

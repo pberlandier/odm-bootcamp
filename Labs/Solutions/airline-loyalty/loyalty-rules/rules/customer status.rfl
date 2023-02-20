@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.ruleflow:RuleFlow xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.ruleflow="http://ilog.rules.studio/model/ruleflow.ecore">
+  <name>customer status</name>
+  <uuid>b5e8b818-5a65-41af-a866-e1cbfac5f012</uuid>
+  <locale>en_US</locale>
+  <categories>any</categories>
+  <rfModel>
+<Ruleflow xmlns="http://schemas.ilog.com/Rules/7.0/Ruleflow">
+  <Body>
+    <TaskList>
+      <StartTask Identifier="task_0"/>
+      <RuleTask ExecutionMode="Fastpath" ExitCriteria="None" Identifier="base status" Ordering="Default">
+        <FinalActions Language="bal"><![CDATA[print "Customer base status is " + status ; ]]></FinalActions>
+        <RuleList>
+          <Package Name="base status"/>
+        </RuleList>
+      </RuleTask>
+      <RuleTask ExecutionMode="Fastpath" ExitCriteria="None" Identifier="credit card adjustment" Ordering="Default">
+        <RuleList>
+          <Package Name="credit card adjustment"/>
+        </RuleList>
+      </RuleTask>
+      <StopTask Identifier="task_1">
+        <Actions Language="bal"><![CDATA[print "Customer final status is " + status ; ]]></Actions>
+      </StopTask>
+    </TaskList>
+    <NodeList>
+      <TaskNode Identifier="node_0" Task="task_0"/>
+      <TaskNode Identifier="node_1" Task="task_1"/>
+      <TaskNode Identifier="node_2" Task="base status"/>
+      <TaskNode Identifier="node_3" Task="credit card adjustment"/>
+    </NodeList>
+    <TransitionList>
+      <Transition Identifier="transition_0" Source="node_0" Target="node_2"/>
+      <Transition Identifier="transition_1" Source="node_2" Target="node_3"/>
+      <Transition Identifier="transition_2" Source="node_3" Target="node_1"/>
+    </TransitionList>
+  </Body>
+  <Resources>
+    <ResourceSet Locale="en_US">
+      <Data Name="node_2#height">53.402344</Data>
+      <Data Name="node_1#height">21.000006</Data>
+      <Data Name="node_3#height">68.103516</Data>
+      <Data Name="node_0#height">21.0</Data>
+      <Data Name="node_1#name">node_2</Data>
+      <Data Name="node_2#name">node_1</Data>
+      <Data Name="node_3#width">102.0</Data>
+      <Data Name="node_1#width">21.000002</Data>
+      <Data Name="node_0#name">node_0</Data>
+      <Data Name="node_2#width">102.0</Data>
+      <Data Name="node_0#width">21.0</Data>
+      <Data Name="node_3#y">208.4541</Data>
+      <Data Name="node_0#x">51.0</Data>
+      <Data Name="node_0#y">10.5</Data>
+      <Data Name="node_1#x">51.0</Data>
+      <Data Name="node_1#y">303.00586</Data>
+      <Data Name="node_2#x">51.0</Data>
+      <Data Name="node_3#name">node_3</Data>
+      <Data Name="node_2#y">97.70117</Data>
+      <Data Name="node_3#x">51.0</Data>
+    </ResourceSet>
+  </Resources>
+  <Properties/>
+</Ruleflow></rfModel>
+</ilog.rules.studio.model.ruleflow:RuleFlow>

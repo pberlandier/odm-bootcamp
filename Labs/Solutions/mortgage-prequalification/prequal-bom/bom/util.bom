@@ -1,0 +1,11 @@
+
+property uuid "8ba7ea98-4f9d-4f07-b979-b69404c51b11"
+package acme;
+
+
+public class Util
+{
+    public static double maximum(double val1, double val2);
+    public static double minimum(double val1, double val2);
+}
+

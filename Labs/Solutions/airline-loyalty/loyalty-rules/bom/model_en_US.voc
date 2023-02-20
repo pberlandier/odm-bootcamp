@@ -1,0 +1,13 @@
+# Vocabulary Properties
+uuid = 154a3605-c454-4706-a054-93e9dfdd6397
+
+# acme.Customer
+acme.Customer#concept.label = customer
+acme.Customer.cardMember#phrase.action = make it {card member} that {this} is card member
+acme.Customer.cardMember#phrase.navigation = {this} is card member
+acme.Customer.dollarsSpent#phrase.action = set the dollars spent of {this} to {dollars spent}
+acme.Customer.dollarsSpent#phrase.navigation = {dollars spent} of {this}
+acme.Customer.milesFlown#phrase.action = set the miles flown of {this} to {miles flown}
+acme.Customer.milesFlown#phrase.navigation = {miles flown} of {this}
+acme.Customer.segmentsTravelled#phrase.action = set the segments travelled of {this} to {segments travelled}
+acme.Customer.segmentsTravelled#phrase.navigation = {segments travelled} of {this}

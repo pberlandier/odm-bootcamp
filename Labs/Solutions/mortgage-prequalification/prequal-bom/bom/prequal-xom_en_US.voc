@@ -1,0 +1,37 @@
+# Vocabulary Properties
+uuid = 5fe9f92b-2171-4415-9773-805ae820fb2c
+
+# acme.Borrower
+acme.Borrower#concept.label = borrower
+acme.Borrower.citizenshipStatus#phrase.navigation = {citizenship status} of {this}
+acme.Borrower.creditScore#phrase.navigation = {credit score} of {this}
+acme.Borrower.employerName#phrase.navigation = {employer name} of {this}
+acme.Borrower.employmentType#phrase.navigation = {employment type} of {this}
+acme.Borrower.getAge()#phrase.navigation = {age} of {this}
+acme.Borrower.latePayments#phrase.navigation = {late payments} of {this}
+
+# acme.LoanRequest
+acme.LoanRequest#concept.label = loan request
+acme.LoanRequest.LTV#phrase.navigation = {LTV} of {this}
+acme.LoanRequest.amount#phrase.navigation = {amount} of {this}
+acme.LoanRequest.baseRate#phrase.action = set the base rate of {this} to {base rate}
+acme.LoanRequest.baseRate#phrase.navigation = {base rate} of {this}
+acme.LoanRequest.coBorrowers#phrase.navigation = {co-borrower} of {this}
+acme.LoanRequest.decline(java.lang.String)#phrase.action = decline {this} because {0}
+acme.LoanRequest.eligible#phrase.action = make it {eligible} that {this} is eligible
+acme.LoanRequest.eligible#phrase.navigation = {this} is eligible
+acme.LoanRequest.finalRate#phrase.action = set the final rate of {this} to {final rate}
+acme.LoanRequest.finalRate#phrase.navigation = {final rate} of {this}
+acme.LoanRequest.primaryBorrower#phrase.navigation = {primary borrower} of {this}
+acme.LoanRequest.property#phrase.navigation = {property} of {this}
+acme.LoanRequest.purpose#phrase.navigation = {purpose} of {this}
+acme.LoanRequest.riskGrade#phrase.action = set the risk grade of {this} to {risk grade}
+acme.LoanRequest.riskGrade#phrase.navigation = {risk grade} of {this}
+acme.LoanRequest.term#phrase.action = set the term of {this} to {term}
+acme.LoanRequest.term#phrase.navigation = {term} of {this}
+
+# acme.Property
+acme.Property#concept.label = property
+acme.Property.occupancyType#phrase.navigation = {occupancy type} of {this}
+acme.Property.state#phrase.navigation = {state} of {this}
+acme.Property.value#phrase.navigation = {value} of {this}

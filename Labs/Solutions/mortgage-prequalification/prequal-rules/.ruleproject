@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.base:RuleProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" xmlns:ilog.rules.studio.model.base="http://ilog.rules.studio/model/base.ecore" xmlns:ilog.rules.studio.model.bom="http://ilog.rules.studio/model/bom.ecore" xmlns:ilog.rules.studio.model.query="http://ilog.rules.studio/model/query.ecore" xmlns:ilog.rules.studio.model.rule="http://ilog.rules.studio/model/rule.ecore" xmlns:ilog.rules.studio.model.xom="http://ilog.rules.studio/model/xom.ecore" buildMode="DecisionEngine" isADecisionService="true" migrationFlag="3">
+  <name>prequal-rules</name>
+  <uuid>86f9c153-0f74-4e6c-a072-6b6abaf7f060</uuid>
+  <outputLocation>output</outputLocation>
+  <categories>any</categories>
+  <paths xsi:type="ilog.rules.studio.model.xom:XOMPath" pathID="XOM">
+    <entries xsi:type="ilog.rules.studio.model.xom:LibraryXOMPathEntry" name="org.eclipse.jdt.launching.JRE_CONTAINER" url="file:org.eclipse.jdt.launching.JRE_CONTAINER" kind="LIBRARY"/>
+    <entries xsi:type="ilog.rules.studio.model.xom:SystemXOMPathEntry" name="pq-validation-rules" url="platform:/pq-validation-rules" kind="RULE_PROJECT"/>
+    <entries xsi:type="ilog.rules.studio.model.xom:SystemXOMPathEntry" name="pq-eligibility-rules" url="platform:/pq-eligibility-rules" kind="RULE_PROJECT"/>
+    <entries xsi:type="ilog.rules.studio.model.xom:SystemXOMPathEntry" name="pq-risk-rules" url="platform:/pq-risk-rules" kind="RULE_PROJECT"/>
+    <entries xsi:type="ilog.rules.studio.model.xom:SystemXOMPathEntry" name="pq-pricing-rules" url="platform:/pq-pricing-rules" kind="RULE_PROJECT"/>
+  </paths>
+  <paths xsi:type="ilog.rules.studio.model.bom:BOMPath" pathID="BOM">
+    <entries xsi:type="ilog.rules.studio.model.bom:ProjectBOMEntry" name="pq-validation-rules" url="platform:/pq-validation-rules" kind="RULE_PROJECT">
+      <ruleProject href="pq-validation-rules#0fbfd1d1-8fc2-4e09-893e-e311f619ff73"/>
+    </entries>
+    <entries xsi:type="ilog.rules.studio.model.bom:ProjectBOMEntry" name="pq-eligibility-rules" url="platform:/pq-eligibility-rules" kind="RULE_PROJECT">
+      <ruleProject href="pq-eligibility-rules#cbabb72f-e411-4476-bc24-4e86919c1cc6"/>
+    </entries>
+    <entries xsi:type="ilog.rules.studio.model.bom:ProjectBOMEntry" name="pq-risk-rules" url="platform:/pq-risk-rules" kind="RULE_PROJECT">
+      <ruleProject href="pq-risk-rules#5a452a76-5b37-4269-9d89-5b589bcfc7d2"/>
+    </entries>
+    <entries xsi:type="ilog.rules.studio.model.bom:ProjectBOMEntry" name="pq-pricing-rules" url="platform:/pq-pricing-rules" kind="RULE_PROJECT">
+      <ruleProject href="pq-pricing-rules#7fb985f3-d1de-45f3-9fb5-990a27f59da6"/>
+    </entries>
+  </paths>
+  <modelFolders xsi:type="ilog.rules.studio.model.base:SourceFolder">
+    <name>rules</name>
+  </modelFolders>
+  <modelFolders xsi:type="ilog.rules.studio.model.bom:BOMFolder">
+    <name>bom</name>
+  </modelFolders>
+  <modelFolders xsi:type="ilog.rules.studio.model.rule:TemplateFolder">
+    <name>templates</name>
+  </modelFolders>
+  <modelFolders xsi:type="ilog.rules.studio.model.query:QueryFolder">
+    <name>queries</name>
+  </modelFolders>
+  <modelFolders xsi:type="ilog.rules.studio.model.base:ResourceFolder">
+    <name>resources</name>
+  </modelFolders>
+  <modelFolders xsi:type="com.ibm.rules.studio.model.decisionservice:OperationFolder">
+    <name>deployment</name>
+  </modelFolders>
+</ilog.rules.studio.model.base:RuleProject>

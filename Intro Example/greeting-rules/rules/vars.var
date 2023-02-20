@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.base:VariableSet xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.base="http://ilog.rules.studio/model/base.ecore">
+  <name>vars</name>
+  <uuid>4de9ff48-1b4a-4577-a24b-d63b9228659f</uuid>
+  <variables name="person" type="com.acme.Person" initialValue="" verbalization="person"/>
+  <variables name="greeting" type="com.acme.Greeting" initialValue="new com.acme.Greeting()" verbalization="greeting"/>
+</ilog.rules.studio.model.base:VariableSet>

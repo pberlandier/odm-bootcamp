@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>credit score range</name>
+  <uuid>3b27c18a-10cc-46b0-9b44-8da88d6db999</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[if
+	it is not true that the credit score of borrower is between 200 and 900
+then
+	decline 'loan request' because "the credit score is out of bounds" ;]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>
